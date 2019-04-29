@@ -1,182 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-        <!-- Vendor styles -->
-        <link rel="stylesheet" href="<?php echo base_url('assets/'); ?>vendors/material-design-iconic-font/css/material-design-iconic-font.min.css">
-        <link rel="stylesheet" href="<?php echo base_url('assets/'); ?>vendors/animate.css/animate.min.css">
+        <title>OneUI - Bootstrap 4 Admin Template &amp; UI Framework</title>
 
-        <!-- App styles -->
-        <link rel="stylesheet" href="<?php echo base_url('assets/'); ?>css/app.min.css">
+        <meta name="description" content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+        <meta name="author" content="pixelcave">
+        <meta name="robots" content="noindex, nofollow">
+
+        <!-- Open Graph Meta -->
+        <meta property="og:title" content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework">
+        <meta property="og:site_name" content="OneUI">
+        <meta property="og:description" content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="<?php echo base_url('assets/'); ?>media/favicons/favicon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="<?php echo base_url('assets/'); ?>media/favicons/favicon-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url('assets/'); ?>media/favicons/apple-touch-icon-180x180.png">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Fonts and OneUI framework -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+        <link rel="stylesheet" id="css-main" href="<?php echo base_url('assets/'); ?>css/oneui.min.css">
+
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <!-- <link rel="stylesheet" id="css-theme" href="<?php echo base_url('assets/'); ?>css/themes/amethyst.min.css"> -->
+        <!-- END Stylesheets -->
     </head>
+    <body>
+        <!-- Page Container -->
+        <!--
+            Available classes for #page-container:
 
-    <body data-ma-theme="green">
-        <div class="login">
+        GENERIC
 
-            <!-- Login -->
-            <div class="login__block active" id="l-login">
-                <div class="login__block__header">
-                    <i class="zmdi zmdi-account-circle"></i>
-                    Hi there! Please Sign in
+            'enable-cookies'                            Remembers active color theme between pages (when set through color theme helper Template._uiHandleTheme())
 
-                    <!-- <div class="actions actions--inverse login__block__actions">
-                        <div class="dropdown">
-                            <i data-toggle="dropdown" class="zmdi zmdi-more-vert actions__item"></i>
+        SIDEBAR & SIDE OVERLAY
 
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-register" href="">Create an account</a>
-                                <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-forget-password" href="">Forgot password?</a>
+            'sidebar-r'                                 Right Sidebar and left Side Overlay (default is left Sidebar and right Side Overlay)
+            'sidebar-mini'                              Mini hoverable Sidebar (screen width > 991px)
+            'sidebar-o'                                 Visible Sidebar by default (screen width > 991px)
+            'sidebar-o-xs'                              Visible Sidebar by default (screen width < 992px)
+            'sidebar-dark'                              Dark themed sidebar
+
+            'side-overlay-hover'                        Hoverable Side Overlay (screen width > 991px)
+            'side-overlay-o'                            Visible Side Overlay by default
+
+            'enable-page-overlay'                       Enables a visible clickable Page Overlay (closes Side Overlay on click) when Side Overlay opens
+
+            'side-scroll'                               Enables custom scrolling on Sidebar and Side Overlay instead of native scrolling (screen width > 991px)
+
+        HEADER
+
+            ''                                          Static Header if no class is added
+            'page-header-fixed'                         Fixed Header
+
+        HEADER STYLE
+
+            ''                                          Light themed Header
+            'page-header-dark'                          Dark themed Header
+
+        MAIN CONTENT LAYOUT
+
+            ''                                          Full width Main Content if no class is added
+            'main-content-boxed'                        Full width Main Content with a specific maximum width (screen width > 1200px)
+            'main-content-narrow'                       Full width Main Content with a percentage width (screen width > 1200px)
+        -->
+        <div id="page-container">
+
+            <!-- Main Container -->
+            <main id="main-container">
+
+                <!-- Page Content -->
+                <div class="hero-static d-flex align-items-center">
+                    <div class="w-100">
+                        <!-- Sign In Section -->
+                        <div class="content content-full bg-white">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 col-lg-6 col-xl-4 py-4">
+                                    <!-- Header -->
+                                    <div class="text-center">
+                                        <p class="mb-2">
+                                            <i class="fa fa-2x fa-circle-notch text-primary"></i>
+                                        </p>
+                                        <h1 class="h4 mb-1">
+                                            Sign In
+                                        </h1>
+                                        <h2 class="h6 font-w400 text-muted mb-3">
+                                            A perfect match for your project
+                                        </h2>
+                                        <?php echo $messages; ?>
+                                    </div>
+                                    <!-- END Header -->
+
+                                    <!-- Sign In Form -->
+                                    <!-- jQuery Validation (.js-validation-signin class is initialized in js/pages/op_auth_signin.min.js which was auto compiled from _es6/pages/op_auth_signin.js) -->
+                                    <!-- For more info and examples you can check out https://github.com/jzaefferer/jquery-validation -->
+                                    <form class="js-validation-signin" method="POST" action="<?php echo base_url('secure/login'); ?>">
+                                        <div class="py-3">
+                                            <div class="form-group">
+                                                <?php echo form_error('username', '<div class="alert alert-danger" role="alert">', '</div>'); ?>
+                                                <input type="text" class="form-control form-control-lg form-control-alt" id="username" name="username" placeholder="Username">
+                                            </div>
+                                            <div class="form-group">
+                                                <?php echo form_error('password', '<div class="alert alert-danger" role="alert">', '</div>'); ?>
+                                                <input type="password" class="form-control form-control-lg form-control-alt" id="password" name="password" placeholder="Password">
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="d-md-flex align-items-md-center justify-content-md-between">
+                                                    <div class="custom-control custom-switch">
+                                                        <input type="checkbox" class="custom-control-input" id="login-remember" name="login-remember">
+                                                        <label class="custom-control-label font-w400" for="login-remember">Remember Me</label>
+                                                    </div>
+                                                    <div class="py-2">
+                                                        <!-- <a class="font-size-sm" href="op_auth_reminder2.html">Forgot Password?</a> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row justify-content-center mb-0">
+                                            <div class="col-md-6 col-xl-5">
+                                                <button type="submit" class="btn btn-block btn-primary">
+                                                    <i class="fa fa-fw fa-sign-in-alt mr-1"></i> Sign In
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- END Sign In Form -->
+                                </div>
                             </div>
                         </div>
-                    </div> -->
-                </div>
-                <form method="post" action="<?php echo base_url('secure/login'); ?>">
-                <div class="login__block__body">
-                    <?php //echo validation_errors(); ?>
-                    <?php echo $messages; ?>
-                    <div class="form-group form-group--float form-group--centered">
-                        <?php echo form_error('username', '<div class="alert alert-danger" role="alert">', '</div>'); ?>
-                        <input type="text" class="form-control" id="username" name="username">
-                        <label>Username</label>
-                        <i class="form-group__bar"></i>
-                    </div>
-                    <div class="form-group form-group--float form-group--centered">
-                        <?php echo form_error('password', '<div class="alert alert-danger" role="alert">', '</div>'); ?>
-                        <input type="password" class="form-control" id="password" name="password">
-                        <label>Password</label>
-                        <i class="form-group__bar"></i>
-                    </div>
+                        <!-- END Sign In Section -->
 
-                    <button href="index.html" class="btn btn--icon login__block__btn"><i class="zmdi zmdi-long-arrow-right"></i></button>
-                </div>
-                </form>
-            </div>
-
-            <!-- Register -->
-            <div class="login__block" id="l-register">
-                <div class="login__block__header palette-Blue bg">
-                    <i class="zmdi zmdi-account-circle"></i>
-                    Create an account
-
-                    <div class="actions actions--inverse login__block__actions">
-                        <div class="dropdown">
-                            <i data-toggle="dropdown" class="zmdi zmdi-more-vert actions__item"></i>
-
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-login" href="">Already have an account?</a>
-                                <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-forget-password" href="">Forgot password?</a>
-                            </div>
+                        <!-- Footer -->
+                        <div class="font-size-sm text-center text-muted py-3">
+                            <strong>OneUI 4.2</strong> &copy; <span data-toggle="year-copy"></span>
                         </div>
+                        <!-- END Footer -->
                     </div>
                 </div>
+                <!-- END Page Content -->
 
-                <div class="login__block__body">
-                    <div class="form-group form-group--float form-group--centered">
-                        <input type="text" class="form-control">
-                        <label>Name</label>
-                        <i class="form-group__bar"></i>
-                    </div>
-
-                    <div class="form-group form-group--float form-group--centered">
-                        <input type="text" class="form-control">
-                        <label>Email Address</label>
-                        <i class="form-group__bar"></i>
-                    </div>
-
-                    <div class="form-group form-group--float form-group--centered">
-                        <input type="password" class="form-control">
-                        <label>Password</label>
-                        <i class="form-group__bar"></i>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input">
-                            <span class="custom-control-indicator"></span>
-                            <span class="custom-control-description">Accept the license agreement</span>
-                        </label>
-                    </div>
-
-                    <button href="index.html" class="btn btn--icon login__block__btn"><i class="zmdi zmdi-check"></i></button>
-                </div>
-            </div>
-
-            <!-- Forgot Password -->
-            <div class="login__block" id="l-forget-password">
-                <div class="login__block__header palette-Purple bg">
-                    <i class="zmdi zmdi-account-circle"></i>
-                    Forgot Password?
-
-                    <div class="actions actions--inverse login__block__actions">
-                        <div class="dropdown">
-                            <i data-toggle="dropdown" class="zmdi zmdi-more-vert actions__item"></i>
-
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-login" href="">Already have an account?</a>
-                                <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-register" href="">Create an account</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="login__block__body">
-                    <p class="mt-4">Lorem ipsum dolor fringilla enim feugiat commodo sed ac lacus.</p>
-
-                    <div class="form-group form-group--float form-group--centered">
-                        <input type="text" class="form-control">
-                        <label>Email Address</label>
-                        <i class="form-group__bar"></i>
-                    </div>
-
-                    <button href="index.html" class="btn btn--icon login__block__btn"><i class="zmdi zmdi-check"></i></button>
-                </div>
-            </div>
+            </main>
+            <!-- END Main Container -->
         </div>
+        <!-- END Page Container -->
 
-        <!-- Older IE warning message -->
-            <!--[if IE]>
-                <div class="ie-warning">
-                    <h1>Warning!!</h1>
-                    <p>You are using an outdated version of Internet Explorer, please upgrade to any of the following web browsers to access this website.</p>
+        <!--
+            OneUI JS Core
 
-                    <div class="ie-warning__downloads">
-                        <a href="http://www.google.com/chrome">
-                            <img src="img/browsers/chrome.png" alt="">
-                        </a>
+            Vital libraries and plugins used in all pages. You can choose to not include this file if you would like
+            to handle those dependencies through webpack. Please check out assets/_es6/main/bootstrap.js for more info.
 
-                        <a href="https://www.mozilla.org/en-US/firefox/new">
-                            <img src="img/browsers/firefox.png" alt="">
-                        </a>
+            If you like, you could also include them separately directly from the assets/js/core folder in the following
+            order. That can come in handy if you would like to include a few of them (eg jQuery) from a CDN.
 
-                        <a href="http://www.opera.com">
-                            <img src="img/browsers/opera.png" alt="">
-                        </a>
+            assets/js/core/jquery.min.js
+            assets/js/core/bootstrap.bundle.min.js
+            assets/js/core/simplebar.min.js
+            assets/js/core/jquery-scrollLock.min.js
+            assets/js/core/jquery.appear.min.js
+            assets/js/core/js.cookie.min.js
+        -->
+        <script src="<?php echo base_url('assets/'); ?>js/oneui.core.min.js"></script>
 
-                        <a href="https://support.apple.com/downloads/safari">
-                            <img src="img/browsers/safari.png" alt="">
-                        </a>
+        <!--
+            OneUI JS
 
-                        <a href="https://www.microsoft.com/en-us/windows/microsoft-edge">
-                            <img src="img/browsers/edge.png" alt="">
-                        </a>
+            Custom functionality including Blocks/Layout API as well as other vital and optional helpers
+            webpack is putting everything together at assets/_es6/main/app.js
+        -->
+        <script src="<?php echo base_url('assets/'); ?>js/oneui.app.min.js"></script>
 
-                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                            <img src="img/browsers/ie.png" alt="">
-                        </a>
-                    </div>
-                    <p>Sorry for the inconvenience!</p>
-                </div>
-            <![endif]-->
+        <!-- Page JS Plugins -->
+        <script src="<?php echo base_url('assets/'); ?>js/plugins/jquery-validation/jquery.validate.min.js"></script>
 
-        <!-- Javascript -->
-        <!-- Vendors -->
-        <script src="<?php echo base_url('assets/'); ?>vendors/jquery/jquery.min.js"></script>
-        <script src="<?php echo base_url('assets/'); ?>vendors/popper.js/popper.min.js"></script>
-        <script src="<?php echo base_url('assets/'); ?>vendors/bootstrap/js/bootstrap.min.js"></script>
-
-        <!-- App functions and actions -->
-        <script src="<?php echo base_url('assets/'); ?>js/app.min.js"></script>
+        <!-- Page JS Code -->
+        <script src="<?php echo base_url('assets/'); ?>js/pages/op_auth_signin.min.js"></script>
     </body>
 </html>
