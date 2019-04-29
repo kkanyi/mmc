@@ -60,10 +60,10 @@ class MX_Controller
 		/*form validation module*/
 		// $this->form_validation->CI =& $this;
 
-		// if (!$this->ion_auth->logged_in()){redirect('secure/login');}
-		// $this->user_data = $this->ion_auth->user()->row();
+		if (!$this->ion_auth->logged_in()){redirect('secure/login');}
+		$this->user_data = $this->ion_auth->user()->row();
 		$this->page_data = array('page_title' => 'FMS' );
-		// $this->page_data = array('user_greeting' => 'Hi, '.$this->user_data->first_name.','.$this->user_data->last_name );
+		$this->page_data = array('user_greeting' => 'Hi, '.$this->user_data->first_name.','.$this->user_data->last_name );
 	}
 	
 	public function __get($class) 
