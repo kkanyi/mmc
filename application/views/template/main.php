@@ -78,26 +78,26 @@
             <!-- Side Overlay-->
             <aside id="side-overlay" class="font-size-sm">
                 <!-- Side Header -->
-                <div class="content-header border-bottom">
+                <!-- <div class="content-header border-bottom"> -->
                     <!-- User Avatar -->
-                    <a class="img-link mr-1" href="javascript:void(0)">
+                    <!-- <a class="img-link mr-1" href="javascript:void(0)">
                         <img class="img-avatar img-avatar32" src="<?php echo base_url('assets/'); ?>media/avatars/avatar10.jpg" alt="">
-                    </a>
+                    </a> -->
                     <!-- END User Avatar -->
 
                     <!-- User Info -->
-                    <div class="ml-2">
+                    <!-- <div class="ml-2">
                         <a class="link-fx text-dark font-w600" href="javascript:void(0)">Adam McCoy</a>
-                    </div>
+                    </div> -->
                     <!-- END User Info -->
 
                     <!-- Close Side Overlay -->
                     <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
-                    <a class="ml-auto btn btn-sm btn-dual" href="javascript:void(0)" data-toggle="layout" data-action="side_overlay_close">
-                        <i class="fa fa-fw fa-times text-danger"></i>
-                    </a>
+        <!--             <a class="ml-auto btn btn-sm btn-dual" href="javascript:void(0)" data-toggle="layout" data-action="side_overlay_close">
+            <i class="fa fa-fw fa-times text-danger"></i>
+        </a> -->
                     <!-- END Close Side Overlay -->
-                </div>
+                <!-- </div> -->
                 <!-- END Side Header -->
 
                 <!-- Side Content -->
@@ -118,9 +118,9 @@
                         </ul>
                         <div class="block-content tab-content overflow-hidden">
                             <!-- Overview Tab -->
-                            <div class="tab-pane pull-x fade fade-left show active" id="so-overview" role="tabpanel">
+                            <!-- <div class="tab-pane pull-x fade fade-left show active" id="so-overview" role="tabpanel"> -->
                                 <!-- Activity -->
-                                <div class="block">
+                                <!-- <div class="block">
                                     <div class="block-header block-header-default">
                                         <h3 class="block-title">Recent Activity</h3>
                                         <div class="block-options">
@@ -131,7 +131,7 @@
                                         </div>
                                     </div>
                                     <div class="block-content">
-                                        <!-- Activity List -->
+                                        Activity List
                                         <ul class="nav-items mb-0">
                                             <li>
                                                 <a class="text-dark media py-2" href="javascript:void(0)">
@@ -171,14 +171,14 @@
                                                     </div>
                                                 </a>
                                             </li>
-                                        </ul>
+                                        </ul> -->
                                         <!-- END Activity List -->
-                                    </div>
-                                </div>
+                                    <!-- </div> -->
+                                <!-- </div> -->
                                 <!-- END Activity -->
 
                                 <!-- Online Friends -->
-                                <div class="block">
+                                <!-- <div class="block">
                                     <div class="block-header block-header-default">
                                         <h3 class="block-title">Online Friends</h3>
                                         <div class="block-options">
@@ -189,7 +189,7 @@
                                         </div>
                                     </div>
                                     <div class="block-content">
-                                        <!-- Users Navigation -->
+                                        Users Navigation
                                         <ul class="nav-items mb-0">
                                             <li>
                                                 <a class="media py-2" href="javascript:void(0)">
@@ -251,10 +251,10 @@
                                                     </div>
                                                 </a>
                                             </li>
-                                        </ul>
+                                        </ul> -->
                                         <!-- END Users Navigation -->
-                                    </div>
-                                </div>
+                                    <!-- </div> -->
+                                <!-- </div> -->
                                 <!-- END Online Friends -->
 
                                 <!-- Quick Settings -->
@@ -267,7 +267,7 @@
                                     </div>
                                     <div class="block-content">
                                         <!-- Quick Settings Form -->
-                                        <form action="be_pages_dashboard.html" method="POST" onsubmit="return false;">
+                                        <!-- <form action="be_pages_dashboard.html" method="POST" onsubmit="return false;">
                                             <div class="form-group">
                                                 <p class="font-w600 mb-2">
                                                     Online Status
@@ -311,197 +311,13 @@
                                                     <label class="custom-control-label" for="so-settings-check5">Enable access</label>
                                                 </div>
                                             </div>
-                                        </form>
+                                        </form> -->
                                         <!-- END Quick Settings Form -->
-                                    </div>
-                                </div>
+                                    <!-- </div> -->
+                                <!-- </div> -->
                                 <!-- END Quick Settings -->
                             </div>
                             <!-- END Overview Tab -->
-
-                            <!-- Sales Tab -->
-                            <div class="tab-pane pull-x fade fade-right" id="so-sales" role="tabpanel">
-                                <div class="block mb-0">
-                                    <!-- Stats -->
-                                    <div class="block-content">
-                                        <div class="row items-push pull-t">
-                                            <div class="col-6">
-                                                <div class="font-w700 text-uppercase">Sales</div>
-                                                <a class="link-fx font-size-h3 font-w300" href="javascript:void(0)">22.030</a>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="font-w700 text-uppercase">Balance</div>
-                                                <a class="link-fx font-size-h3 font-w300" href="javascript:void(0)">$4.589,00</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END Stats -->
-
-                                    <!-- Today -->
-                                    <div class="block-content block-content-full block-content-sm bg-body-light">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <span class="font-w600 text-uppercase">Today</span>
-                                            </div>
-                                            <div class="col-6 text-right">
-                                                <span class="ext-muted">$996</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-content">
-                                        <ul class="nav-items push">
-                                            <li>
-                                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                                    <div class="mr-3 ml-2">
-                                                        <i class="fa fa-fw fa-circle text-success"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="font-w600">New sale! + $249</div>
-                                                        <small class="text-muted">3 min ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                                    <div class="mr-3 ml-2">
-                                                        <i class="fa fa-fw fa-circle text-success"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="font-w600">New sale! + $129</div>
-                                                        <small class="text-muted">50 min ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                                    <div class="mr-3 ml-2">
-                                                        <i class="fa fa-fw fa-circle text-success"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="font-w600">New sale! + $119</div>
-                                                        <small class="text-muted">2 hours ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                                    <div class="mr-3 ml-2">
-                                                        <i class="fa fa-fw fa-circle text-success"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="font-w600">New sale! + $499</div>
-                                                        <small class="text-muted">3 hours ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!-- END Today -->
-
-                                    <!-- Yesterday -->
-                                    <div class="block-content block-content-full block-content-sm bg-body-light">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <span class="font-w600 text-uppercase">Yesterday</span>
-                                            </div>
-                                            <div class="col-6 text-right">
-                                                <span class="text-muted">$765</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-content">
-                                        <ul class="nav-items push">
-                                            <li>
-                                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                                    <div class="mr-3 ml-2">
-                                                        <i class="fa fa-fw fa-circle text-success"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="font-w600">New sale! + $249</div>
-                                                        <small class="text-muted">26 hours ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                                    <div class="mr-3 ml-2">
-                                                        <i class="fa fa-fw fa-circle text-danger"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="font-w600">Product Purchase - $50</div>
-                                                        <small class="text-muted">28 hours ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                                    <div class="mr-3 ml-2">
-                                                        <i class="fa fa-fw fa-circle text-success"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="font-w600">New sale! + $119</div>
-                                                        <small class="text-muted">29 hours ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                                    <div class="mr-3 ml-2">
-                                                        <i class="fa fa-fw fa-circle text-danger"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="font-w600">Paypal Withdrawal - $300</div>
-                                                        <small class="text-muted">37 hours ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                                    <div class="mr-3 ml-2">
-                                                        <i class="fa fa-fw fa-circle text-success"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="font-w600">New sale! + $129</div>
-                                                        <small class="text-muted">39 hours ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                                    <div class="mr-3 ml-2">
-                                                        <i class="fa fa-fw fa-circle text-success"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="font-w600">New sale! + $119</div>
-                                                        <small class="text-muted">45 hours ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                                    <div class="mr-3 ml-2">
-                                                        <i class="fa fa-fw fa-circle text-success"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="font-w600">New sale! + $499</div>
-                                                        <small class="text-muted">46 hours ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                        <!-- More -->
-                                        <div class="text-center">
-                                            <a class="btn btn-sm btn-light" href="javascript:void(0)">
-                                                <i class="fa fa-arrow-down mr-1"></i> Load More..
-                                            </a>
-                                        </div>
-                                        <!-- END More -->
-                                    </div>
-                                    <!-- END Yesterday -->
-                                </div>
-                            </div>
-                            <!-- END Sales Tab -->
                         </div>
                     </div>
                     <!-- END Side Overlay Tabs -->
@@ -526,7 +342,7 @@
                 <!-- Side Header -->
                 <div class="content-header bg-white-5">
                     <!-- Logo -->
-                    <a class="font-w600 text-dual" href="index.html">
+                    <a class="font-w600 text-dual" href="<?php echo base_url(); ?>">
                         <i class="fa fa-circle-notch text-primary"></i>
                         <span class="smini-hide">
                             <span class="font-w700 font-size-h5">ne</span> <span class="font-w400">4.2</span>
@@ -782,7 +598,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-main-item">
+                        <!-- <li class="nav-main-item">
                             <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
                                 <i class="nav-main-link-icon si si-note"></i>
                                 <span class="nav-main-link-name">Forms</span>
@@ -829,8 +645,8 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="nav-main-heading">Develop</li>
+                        </li> -->
+                        <!-- <li class="nav-main-heading">Develop</li>
                         <li class="nav-main-item">
                             <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
                                 <i class="nav-main-link-icon si si-wrench"></i>
@@ -903,8 +719,8 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="nav-main-item">
+                        </li> -->
+                        <!-- <li class="nav-main-item">
                             <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
                                 <i class="nav-main-link-icon si si-magic-wand"></i>
                                 <span class="nav-main-link-name">Layout</span>
@@ -1038,8 +854,8 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="nav-main-item">
+                        </li> -->
+                        <!-- <li class="nav-main-item">
                             <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
                                 <i class="nav-main-link-icon si si-puzzle"></i>
                                 <span class="nav-main-link-name">Multi Level Menu</span>
@@ -1141,8 +957,8 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="nav-main-heading">Pages</li>
+                        </li> -->
+                        <!-- <li class="nav-main-heading">Pages</li>
                         <li class="nav-main-item open">
                             <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="true" href="#">
                                 <i class="nav-main-link-icon si si-layers"></i>
@@ -1307,8 +1123,8 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="nav-main-item">
+                        </li> -->
+                        <!-- <li class="nav-main-item">
                             <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
                                 <i class="nav-main-link-icon si si-lock"></i>
                                 <span class="nav-main-link-name">Authentication</span>
@@ -1360,8 +1176,8 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="nav-main-item">
+                        </li> -->
+                        <!-- <li class="nav-main-item">
                             <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
                                 <i class="nav-main-link-icon si si-fire"></i>
                                 <span class="nav-main-link-name">Error Pages</span>
@@ -1403,7 +1219,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 <!-- END Side Navigation -->
@@ -1481,7 +1297,7 @@
                                             <i class="si si-envelope-open ml-1"></i>
                                         </span>
                                     </a>
-                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="be_pages_generic_profile.html">
+                                    <!-- <a class="dropdown-item d-flex align-items-center justify-content-between" href="be_pages_generic_profile.html">
                                         <span>Profile</span>
                                         <span>
                                             <span class="badge badge-pill badge-success">1</span>
@@ -1491,13 +1307,13 @@
                                     <a class="dropdown-item d-flex align-items-center justify-content-between" href="javascript:void(0)">
                                         <span>Settings</span>
                                         <i class="si si-settings"></i>
-                                    </a>
+                                    </a> -->
                                     <div role="separator" class="dropdown-divider"></div>
                                     <h5 class="dropdown-header text-uppercase">Actions</h5>
-                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="op_auth_lock.html">
+                                    <!-- <a class="dropdown-item d-flex align-items-center justify-content-between" href="op_auth_lock.html">
                                         <span>Lock Account</span>
                                         <i class="si si-lock ml-1"></i>
-                                    </a>
+                                    </a> -->
                                     <a class="dropdown-item d-flex align-items-center justify-content-between" href="<?php echo base_url('secure/logout'); ?>">
                                         <span>Log Out</span>
                                         <i class="si si-logout ml-1"></i>
@@ -1508,7 +1324,7 @@
                         <!-- END User Dropdown -->
 
                         <!-- Notifications Dropdown -->
-                        <div class="dropdown d-inline-block ml-2">
+                        <!-- <div class="dropdown d-inline-block ml-2">
                             <button type="button" class="btn btn-sm btn-dual" id="page-header-notifications-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="si si-bell"></i>
                                 <span class="badge badge-primary badge-pill">6</span>
@@ -1591,7 +1407,7 @@
                                     </a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- END Notifications Dropdown -->
 
                         <!-- Toggle Side Overlay -->
@@ -1688,12 +1504,12 @@
             <footer id="page-footer" class="bg-body-light">
                 <div class="content py-3">
                     <div class="row font-size-sm">
-                        <div class="col-sm-6 order-sm-2 py-1 text-center text-sm-right">
+                        <!-- <div class="col-sm-6 order-sm-2 py-1 text-center text-sm-right">
                             Crafted with <i class="fa fa-heart text-danger"></i> by <a class="font-w600" href="https://1.envato.market/ydb" target="_blank">pixelcave</a>
                         </div>
                         <div class="col-sm-6 order-sm-1 py-1 text-center text-sm-left">
                             <a class="font-w600" href="https://1.envato.market/xWy" target="_blank">OneUI 4.2</a> &copy; <span data-toggle="year-copy"></span>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </footer>
