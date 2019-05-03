@@ -25,9 +25,9 @@ class Welcome extends MX_Controller {
 	public function index()
 	{
 		// echo 'Here!!';
-		// $this->page_data['content'] = 'Welcome';
-		// $this->page_data['page_title'] = 'FMS';
-		$this->page_data=array();
+		$this->page_data['content'] = 'Welcome to the first page';
+		$this->page_data['content_title'] = 'Welcome';
+		// $this->page_data=array();
 		$this->parser->parse('template/main', $this->page_data);
 		// $this->load->view('welcome_message');
 	}

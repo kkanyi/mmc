@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-        <title>OneUI - Bootstrap 4 Admin Template &amp; UI Framework</title>
+        <title>{title}</title>
 
         <meta name="description" content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
         <meta name="author" content="pixelcave">
@@ -101,10 +101,10 @@
                 <!-- END Side Header -->
 
                 <!-- Side Content -->
-                <div class="content-side">
+                <!-- <div class="content-side"> -->
                     <!-- Side Overlay Tabs -->
-                    <div class="block block-transparent pull-x pull-t">
-                        <ul class="nav nav-tabs nav-tabs-alt nav-justified" data-toggle="tabs" role="tablist">
+                    <!-- <div class="block block-transparent pull-x pull-t"> -->
+                        <!-- <ul class="nav nav-tabs nav-tabs-alt nav-justified" data-toggle="tabs" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" href="#so-overview">
                                     <i class="fa fa-fw fa-coffee text-gray mr-1"></i> Overview
@@ -115,8 +115,8 @@
                                     <i class="fa fa-fw fa-chart-line text-gray mr-1"></i> Sales
                                 </a>
                             </li>
-                        </ul>
-                        <div class="block-content tab-content overflow-hidden">
+                        </ul> -->
+                        <!-- <div class="block-content tab-content overflow-hidden"> -->
                             <!-- Overview Tab -->
                             <!-- <div class="tab-pane pull-x fade fade-left show active" id="so-overview" role="tabpanel"> -->
                                 <!-- Activity -->
@@ -258,14 +258,14 @@
                                 <!-- END Online Friends -->
 
                                 <!-- Quick Settings -->
-                                <div class="block mb-0">
-                                    <div class="block-header block-header-default">
+                                <!-- <div class="block mb-0"> -->
+                                    <!-- <div class="block-header block-header-default">
                                         <h3 class="block-title">Quick Settings</h3>
                                         <div class="block-options">
                                             <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
                                         </div>
-                                    </div>
-                                    <div class="block-content">
+                                    </div> -->
+                                    <!-- <div class="block-content"> -->
                                         <!-- Quick Settings Form -->
                                         <!-- <form action="be_pages_dashboard.html" method="POST" onsubmit="return false;">
                                             <div class="form-group">
@@ -316,12 +316,12 @@
                                     <!-- </div> -->
                                 <!-- </div> -->
                                 <!-- END Quick Settings -->
-                            </div>
+                            <!-- </div> -->
                             <!-- END Overview Tab -->
-                        </div>
-                    </div>
+                        <!-- </div> -->
+                    <!-- </div> -->
                     <!-- END Side Overlay Tabs -->
-                </div>
+                <!-- </div> -->
                 <!-- END Side Content -->
             </aside>
             <!-- END Side Overlay -->
@@ -437,34 +437,24 @@
                         <li class="nav-main-item">
                             <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
                                 <i class="nav-main-link-icon si si-energy"></i>
-                                <span class="nav-main-link-name">Blocks</span>
+                                <span class="nav-main-link-name">Tickets</span>
                             </a>
                             <ul class="nav-main-submenu">
                                 <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_blocks_styles.html">
-                                        <span class="nav-main-link-name">Styles</span>
+                                    <a class="nav-main-link" href="<?php echo base_url('tickets/')?>">
+                                        <span class="nav-main-link-name">All tickets</span>
                                     </a>
                                 </li>
                                 <li class="nav-main-item">
                                     <a class="nav-main-link" href="be_blocks_options.html">
-                                        <span class="nav-main-link-name">Options</span>
+                                        <span class="nav-main-link-name">New Ticket</span>
                                     </a>
                                 </li>
-                                <li class="nav-main-item">
+                                <!-- <li class="nav-main-item">
                                     <a class="nav-main-link" href="be_blocks_forms.html">
                                         <span class="nav-main-link-name">Forms</span>
                                     </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_blocks_themed.html">
-                                        <span class="nav-main-link-name">Themed</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_blocks_api.html">
-                                        <span class="nav-main-link-name">API</span>
-                                    </a>
-                                </li>
+                                </li> -->
                             </ul>
                         </li>
                         <li class="nav-main-item">
@@ -488,81 +478,6 @@
                                         <span class="nav-main-link-name">Icons</span>
                                     </a>
                                 </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_ui_buttons.html">
-                                        <span class="nav-main-link-name">Buttons</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_ui_buttons_groups.html">
-                                        <span class="nav-main-link-name">Button Groups</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_ui_dropdowns.html">
-                                        <span class="nav-main-link-name">Dropdowns</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_ui_tabs.html">
-                                        <span class="nav-main-link-name">Tabs</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_ui_navigation.html">
-                                        <span class="nav-main-link-name">Navigation</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_ui_progress.html">
-                                        <span class="nav-main-link-name">Progress</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_ui_alerts.html">
-                                        <span class="nav-main-link-name">Alerts</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_ui_tooltips.html">
-                                        <span class="nav-main-link-name">Tooltips</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_ui_popovers.html">
-                                        <span class="nav-main-link-name">Popovers</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_ui_modals.html">
-                                        <span class="nav-main-link-name">Modals</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_ui_images.html">
-                                        <span class="nav-main-link-name">Images Overlay</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_ui_timeline.html">
-                                        <span class="nav-main-link-name">Timeline</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_ui_ribbons.html">
-                                        <span class="nav-main-link-name">Ribbons</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_ui_animations.html">
-                                        <span class="nav-main-link-name">Animations</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_ui_color_themes.html">
-                                        <span class="nav-main-link-name">Color Themes</span>
-                                    </a>
-                                </li>
                             </ul>
                         </li>
                         <li class="nav-main-item">
@@ -579,21 +494,6 @@
                                 <li class="nav-main-item">
                                     <a class="nav-main-link" href="be_tables_responsive.html">
                                         <span class="nav-main-link-name">Responsive</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_tables_helpers.html">
-                                        <span class="nav-main-link-name">Helpers</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_tables_pricing.html">
-                                        <span class="nav-main-link-name">Pricing</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="be_tables_datatables.html">
-                                        <span class="nav-main-link-name">DataTables</span>
                                     </a>
                                 </li>
                             </ul>
@@ -1234,9 +1134,9 @@
                     <div class="d-flex align-items-center">
                         <!-- Toggle Sidebar -->
                         <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
-                        <button type="button" class="btn btn-sm btn-dual mr-2 d-lg-none" data-toggle="layout" data-action="sidebar_toggle">
-                            <i class="fa fa-fw fa-bars"></i>
-                        </button>
+                       <!--  <button type="button" class="btn btn-sm btn-dual mr-2 d-lg-none" data-toggle="layout" data-action="sidebar_toggle">
+                           <i class="fa fa-fw fa-bars"></i>
+                       </button> -->
                         <!-- END Toggle Sidebar -->
 
                         <!-- Toggle Mini Sidebar -->
@@ -1412,9 +1312,9 @@
 
                         <!-- Toggle Side Overlay -->
                         <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
-                        <button type="button" class="btn btn-sm btn-dual ml-2" data-toggle="layout" data-action="side_overlay_toggle">
+                        <!-- <button type="button" class="btn btn-sm btn-dual ml-2" data-toggle="layout" data-action="side_overlay_toggle">
                             <i class="fa fa-fw fa-list-ul fa-flip-horizontal"></i>
-                        </button>
+                        </button> -->
                         <!-- END Toggle Side Overlay -->
                     </div>
                     <!-- END Right Section -->
@@ -1481,16 +1381,17 @@
                     <div class="block">
                         <div class="block-header">
                             <h3 class="block-title">
-                                Block Title
+                                {content_title}
                             </h3>
-                            <div class="block-options">
+                            <!-- <div class="block-options">
                                 <button type="button" class="btn-block-option">
                                     <i class="si si-settings"></i>
                                 </button>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="block-content">
-                            <p>Your content..</p>
+<!--                             <p>Your content..</p>
+ -->                            {content}
                         </div>
                     </div>
                     <!-- END Your Block -->
