@@ -37,10 +37,11 @@
                 <div class="content-header bg-white-5">
                     <!-- Logo -->
                     <a class="font-w600 text-dual" href="<?php echo base_url(); ?>">
-                        <i class="fa fa-circle-notch text-primary"></i>
+                        <!-- <i class="fa fa-circle-notch text-primary"></i>
                         <span class="smini-hide">
                             <span class="font-w700 font-size-h5">ne</span> <span class="font-w400">4.2</span>
-                        </span>
+                        </span> -->
+                        <img src="<?php echo base_url('assets/'); ?>logo.png">
                     </a>
                     <!-- END Logo -->
 
