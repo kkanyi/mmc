@@ -20,75 +20,55 @@
        
     </head>
     <body>
+        <div class="content"> 
             <form action="<?php base_url('tickets/create')?>" method="POST" onsubmit="return false;">
-                <div class="row">
-                    <div class="col-lg-8 col-xl-5">
+                <div class="row items-push">                    
+                    <div class="col-lg-12 col-xl-10">
                         <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        Name
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control" id="example-group1-input1" name="example-group1-input1">
-                            </div>
+                            <label for="val-username">Customer Name</label>
+                            <input type="text" class="form-control" id="val-username" name="val-username" placeholder="Enter customer name..">
                         </div>
                         <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        Name
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control" id="example-group1-input1" name="example-group1-input1">
-                            </div>
+                            <label for="val-email">Customer Address</label>
+                            <input type="text" class="form-control" id="val-email" name="val-email" placeholder="Enter customer address..">
                         </div>
                         <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        Name
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control" id="example-group1-input1" name="example-group1-input1">
-                            </div>
+                            <label for="val-password">Customer Telephone</label>
+                            <input type="text" class="form-control" id="val-password" name="val-password" placeholder="Enter customer contact..">
                         </div>
                         <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        Name
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control" id="example-group1-input1" name="example-group1-input1">
-                            </div>
-                        </div>
+                            <label for="val-confirm-password">Email</label>
+                            <input type="text" class="form-control" id="val-confirm-password" name="val-confirm-password" placeholder="Enter email">
+                        </div> 
                         <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        Name
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control" id="example-group1-input1" name="example-group1-input1">
-                            </div>
-                        </div>
+                            <label for="val-confirm-password">Category</label>
+                            <input type="text" class="form-control" id="val-confirm-password" name="val-confirm-password" placeholder="Ticket category!">
+                        </div> 
                         <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        Name
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control" id="example-group1-input1" name="example-group1-input1">
-                            </div>
+                            <label for="val-confirm-password">Ticket Subject</label>
+                            <input type="text" class="form-control" id="val-confirm-password" name="val-confirm-password" placeholder="Subject!">
+                        </div> 
+
+                        <div class="form-group">
+                            <label for="val-confirm-password">Priority</label>
+                            <input type="text" class="form-control" id="val-confirm-password" name="val-confirm-password" placeholder="..and confirm it!">
+                        </div> 
+
+
+
+                         <div class="row items-push">
+                        <div class="col-lg-7 offset-lg-4">
+                            <button type="button" class="btn btn-info">Add</button>
                         </div>
-                        <button type="button" class="btn btn-success">Submit</button>
                     </div>
+
+                    </div>
+
+                   
                 </div>
             </form>
+        </div>     
   
-
         <script src="assets/js/oneui.core.min.js"></script>
         <script src="assets/js/oneui.app.min.js"></script>
     </body>

@@ -144,6 +144,25 @@
                                
                             </ul>
                         </li>
+                        
+                        <li class="nav-main-item">
+                            <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
+                                <i class="nav-main-link-icon si si-grid"></i>
+                                <span class="nav-main-link-name">Users</span>
+                            </a>
+                            <ul class="nav-main-submenu">
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="<?php echo base_url('users'); ?>">
+                                        <span class="nav-main-link-name">All users</span>
+                                    </a>
+                                </li>
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="<?php echo base_url('users/new'); ?>">
+                                        <span class="nav-main-link-name">New user</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="nav-main-item">
                             <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
                                 <i class="nav-main-link-icon si si-badge"></i>
@@ -163,24 +182,6 @@
                                 <li class="nav-main-item">
                                     <a class="nav-main-link" href="be_ui_icons.html">
                                         <span class="nav-main-link-name">Icons</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-main-item">
-                            <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
-                                <i class="nav-main-link-icon si si-grid"></i>
-                                <span class="nav-main-link-name">Users</span>
-                            </a>
-                            <ul class="nav-main-submenu">
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="<?php echo base_url('users'); ?>">
-                                        <span class="nav-main-link-name">All users</span>
-                                    </a>
-                                </li>
-                                <li class="nav-main-item">
-                                    <a class="nav-main-link" href="<?php echo base_url('users/new'); ?>">
-                                        <span class="nav-main-link-name">New user</span>
                                     </a>
                                 </li>
                             </ul>
