@@ -14,11 +14,15 @@
         <link rel="icon" type="image/png" sizes="192x192" href="<?php echo base_url('assets/'); ?>media/favicons/favicon-192x192.png">
         <link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url('assets/'); ?>media/favicons/apple-touch-icon-180x180.png">
         <!-- END Icons -->
+        <!-- Page JS Plugins CSS -->
+        <link rel="stylesheet" href="<?php echo base_url('assets/'); ?>js/plugins/datatables/dataTables.bootstrap4.css">
+        <link rel="stylesheet" href="<?php echo base_url('assets/'); ?>js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css">
 
         <!-- Stylesheets -->
         <!-- Fonts and OneUI framework -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
         <link rel="stylesheet" id="css-main" href="<?php echo base_url('assets/'); ?>css/oneui.min.css">
+        {css}
     </head>
     <body>
     
@@ -316,16 +320,7 @@
                 <!-- Page Content -->
                 <div class="content">
                     <!-- Your Block -->
-                    <div class="block">
-                        <div class="block-header">
-                            <h3 class="block-title">
-                                {content_title}
-                            </h3>
-                        </div>
-                        <div class="block-content">
-                            {content}
-                        </div>
-                    </div>
+                        {content}
                     <!-- END Your Block -->
                 </div>
                 <!-- END Page Content -->
@@ -415,5 +410,17 @@
        
         <script src="<?php echo base_url('assets/'); ?>js/oneui.core.min.js"></script>
         <script src="<?php echo base_url('assets/'); ?>js/oneui.app.min.js"></script>
+        <!-- Page JS Plugins -->
+        <script src="<?php echo base_url('assets/'); ?>js/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="<?php echo base_url('assets/'); ?>js/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="<?php echo base_url('assets/'); ?>js/plugins/datatables/buttons/dataTables.buttons.min.js"></script>
+        <script src="<?php echo base_url('assets/'); ?>js/plugins/datatables/buttons/buttons.print.min.js"></script>
+        <script src="<?php echo base_url('assets/'); ?>js/plugins/datatables/buttons/buttons.html5.min.js"></script>
+        <script src="<?php echo base_url('assets/'); ?>js/plugins/datatables/buttons/buttons.flash.min.js"></script>
+        <script src="<?php echo base_url('assets/'); ?>js/plugins/datatables/buttons/buttons.colVis.min.js"></script>
+
+        <!-- Page JS Code -->
+        <script src="<?php echo base_url('assets/'); ?>js/pages/be_tables_datatables.min.js"></script>
+        {js}
     </body>
 </html>

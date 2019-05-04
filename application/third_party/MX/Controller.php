@@ -62,7 +62,10 @@ class MX_Controller
 
 		if (!$this->ion_auth->logged_in()){redirect('secure/login');}
 		$this->user_data = $this->ion_auth->user()->row();
-		$this->page_data = array('page_title' => 'FMS' );
+		$this->page_data = array('page_title' => 'MMC' );
+		$this->page_data['page_title'] = 'MMC';
+		$this->page_data['css'] = '';
+		$this->page_data['js'] = '';
 		$this->page_data = array('user_greeting' => 'Hi, '.$this->user_data->first_name.','.$this->user_data->last_name );
 	}
 	
